@@ -16,7 +16,7 @@ $flightAware = new FlightAware('#YOUR_FLIGHT_AWARE_USERNAME#', '#YOUR_FLIGHT_AWA
 ```php
 $scheduledFleet = $flightAware->pull('FleetScheduled', [ 'fleet' => 'KLM' ] );
 ```
-The FlightAware pull function expects 2 parameters, the first parameter (string) is the FlightAware operation e.g. "FleetScheduled". The second parameter (array) is a list of url params that needs to be sent with the request.
+The FlightAware pull function expects 2 parameters, the first (required) parameter (string) is the FlightAware operation e.g. "FleetScheduled". The second (optional) parameter (array) is a list of url params that needs to be sent with the request.
 
 # Errors:
 If, for what reason an error occurs the FlightAware pull function will return an array with key "error" => "message".
